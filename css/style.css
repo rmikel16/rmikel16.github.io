@@ -1,0 +1,154 @@
+/* variables */
+--footerheight: 2.5rem;
+
+ul { padding:0 }
+/* body */
+
+body {
+   background-color: #f2f2f2;
+   margin: 0;
+   padding: 0px;
+}
+
+/* protection for older browsers */
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+/* navbar properties */
+#navbar {
+  position: fixed;
+  height: var(--footerheight, 2.5rem);
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: black /*#000099;*/
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  height: 1.5rem;
+  padding: 10px 8px 6px 8px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #000033; /* #0000cc; */
+}
+
+#navtitle {
+  float: left;
+}
+
+/* header properties */
+header {
+  color: white;
+  text-align: center;
+  background: url("../images/mw.jpg"); /*linear-gradient(50deg, #0000cc, #0000e6); */
+  padding: 5px 5px 5px 5px;
+  margin: 2.5rem 0px 0px 0px;
+  border-color: black;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+}
+
+
+/* project properties */
+.projectcontainer {
+  margin: 8px;
+  padding-bottom: var(--footerheight, 2.5rem);
+}
+
+.projecticon {
+  overflow: auto;
+  min-height: 120px;
+  margin: 10px auto;
+  max-width: 1000px;
+  border-color: black;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.projecticon:hover {
+  border-color: #000066;
+  border-width: 1px 1px 1px 3px;
+}
+
+.projectimage {
+  float: left;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  padding: 10px 10px 10px 10px;
+}
+
+.projecttext {
+  float: left;
+  color: blue;
+  padding: 0px 0px 0px 0px;
+}
+
+.p-title {
+  color: black;
+}
+
+.p-subfield {
+  color: black;
+  padding: 0px 5px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.p-postdate {
+  color: gray;
+  padding: 5px 5px 5px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* footer properties */
+#m-page {
+  position: relative;
+  min-height: 93vh;
+}
+
+footer {
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--footerheight, 2.5rem);
+  color: white;
+  background-color: black; /* #000099; */
+}
+
+.footertext {
+  display: block;
+  margin: 0;
+  height: 1.5rem;
+  padding: 8px 8px 8px 8px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* pdf viewer properties */
+#pdfview {
+  width: 100%;
+  min-height: 93vh;
+  padding-bottom: var(--footerheight, 2.5rem);
+}
