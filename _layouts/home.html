@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<!-- Main page title -->
+<header>
+  <h1>
+    {{ page.title }}
+  </h1>
+  <p>
+    UNDER CONSTRUCTION
+  </p>
+</header>
+<!-- dynamically rescalable set of project elements -->
+<div class="projectcontainer" >
+  {% for post in site.posts %}
+      <div class="projecticon">
+      <a href="{{ post.url }}">
+    <!-- Project Image -->
+    <img class="projectimage" src="{{ post.thumbpath }}" alt="temporary puppy">
+    <!-- Project Text -->
+    <div class="projecttext">
+      <h2 class="p-title">
+        {{ post.title }}
+      </h2>
+      <p class="p-subfield">
+        subfield
+      </p>
+      <p class="p-postdate">
+        Posted: {{ post.date | date: "%b %-d, %Y" }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
